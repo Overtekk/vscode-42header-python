@@ -1,41 +1,36 @@
 <img
-  src="https://raw.githubusercontent.com/kube/vscode-42header/master/42.png" 
+  src="https://raw.githubusercontent.com/kube/vscode-42header/master/42.png"
   width=128>
 
-> **Searching for Maintainer.**
-> 
-> This project was done 7 years ago, which is an eternity relative to VSCode Lifespan.
-> I don't have time to maintain this, but I see a lot of people doing Pull Requests for it, or creating issues.
-> 
-> As there are no Unit Tests and no CI/CD, it makes it even harder to check for issues and PRs.
+> **THIS PROJECT IS A FORK.**
 >
-> What I'd like to do is to give ownership to an "official" 42 organization on GitHub, where a group of students could maintain and update this project themselves.
->
-> If you are interested in such a thing, please ping me.
+> This project is a fork from the vscode-42header from [kube](https://github.com/kube/vscode-42header)
+
 
 # 42 Header for VSCode
 
-This extension provides the 42 header integration in VS Code.
+This extension provides the 42 header integration in VS Code for Python.
+Because the old header can't be put due to flake8, I changed it to a mini-header.
 
 ```bash
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    vscode-42header                                    :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: kube <hello@kube.io>                       +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2013/11/18 13:37:42 by kube              #+#    #+#              #
-#    Updated: 2016/09/18 13:11:04 by kube             ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
+# ************************************************************************* #
+#                                                                           #
+#                                                      :::      ::::::::    #
+# vscode.py                                          :+:      :+:    :+:    #
+#                                                  +:+ +:+         +:+      #
+# By: roandrie <roandrie@student.42.fr>          +#+  +:+       +#+         #
+#                                              +#+#+#+#+#+   +#+            #
+# Created: 2026/01/19 08:57:15 by roandrie         #+#    #+#               #
+# Updated: 2026/01/19 09:18:37 by roandrie         ###   ########.fr        #
+#                                                                           #
+# ************************************************************************* #
 ```
 
 ## Install
 
 Launch Quick Open with <kbd>⌘</kbd>+<kbd>P</kbd> and enter
 ```
-ext install 42header
+ext install 42headerpython
 ```
 
 ## Usage
@@ -55,15 +50,15 @@ To override these values, specify these properties in *User Settings* :
 
 ```ts
 {
-  "42header.username": string,
-  "42header.email": string
+  "42headerpython.username": string,
+  "42headerpython.email": string
 }
 ```
 
 
 ## Issues
 
-In case of a bug, or missing feature, please create a [Github Pull Request](https://github.com/kube/vscode-42header/pulls).
+In case of a bug, or missing feature, please create a [Github Pull Request](https://github.com/Overtekk/vscode-42header-python/pulls).
 
 ## License
 
