@@ -2,7 +2,7 @@
   "name": "42header-python",
   "displayName": "42 Header for Python",
   "description": "42 header-Python for VSCode : www.42.fr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "Overtek",
   "icon": "42.png",
   "repository": {
