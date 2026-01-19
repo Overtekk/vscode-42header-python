@@ -36,8 +36,8 @@ ext install 42headerpython
 ## Usage
 
 ### Insert a header
- - **macOS** : <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>H</kbd>
- - **Linux** / **Windows** : <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>H</kbd>.
+ - **macOS** : <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>P</kbd>
+ - **Linux** / **Windows** : <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd>.
 
 Header is automatically updated on save.
 
