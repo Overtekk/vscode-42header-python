@@ -1,18 +1,18 @@
 {
-  "name": "42header",
-  "displayName": "42 Header",
-  "description": "42 header for VSCode : www.42.fr",
-  "version": "0.42.7",
-  "publisher": "kube",
+  "name": "42header-python",
+  "displayName": "42 Header for Python",
+  "description": "42 header-Python for VSCode : www.42.fr",
+  "version": "1.0.0",
+  "publisher": "Overtek",
   "icon": "42.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kube/vscode-42header"
+    "url": "https://github.com/Overtekk/vscode-42header-python"
   },
   "bugs": {
-    "url": "https://github.com/kube/vscode-42header/issues"
+    "url": "https://github.com/Overtekk/vscode-42header-python/issues"
   },
-  "homepage": "https://github.com/kube/vscode-42header",
+  "homepage": "https://github.com/Overtekk/vscode-42header-python",
   "license": "MIT",
   "engines": {
     "vscode": "^1.6.0"
@@ -21,34 +21,34 @@
     "Other"
   ],
   "activationEvents": [
-    "*"
+    "onLanguage:python"
   ],
   "main": "./out/src/extension",
   "contributes": {
     "configuration": {
       "properties": {
-        "42header.username": {
+        "42headerpython.username": {
           "type": "string",
-          "description": "Username to use in 42 headers"
+          "description": "Username to use in 42 headers-python"
         },
-        "42header.email": {
+        "42headerpython.email": {
           "type": "string",
-          "description": "Email address to use in 42 headers"
+          "description": "Email address to use in 42 headers-python"
         }
       }
     },
     "commands": [
       {
-        "command": "42header.insertHeader",
+        "command": "42headerpython.insertHeader",
         "title": "Insert 42 header",
         "when": "editorTextFocus"
       }
     ],
     "keybindings": [
       {
-        "command": "42header.insertHeader",
-        "key": "ctrl+alt+h",
-        "mac": "cmd+alt+h",
+        "command": "42headerpython.insertHeader",
+        "key": "ctrl+alt+p",
+        "mac": "cmd+alt+p",
         "when": "editorTextFocus"
       }
     ]
@@ -59,8 +59,9 @@
     "postinstall": "node ./node_modules/vscode/bin/install"
   },
   "devDependencies": {
-    "@types/node": "^6.0.45",
-    "typescript": "^2.0.3",
+    "@types/node": "^25.0.9",
+    "@types/vscode": "^1.108.1",
+    "typescript": "^5.9.3",
     "vscode": "^1.0.0"
   },
   "dependencies": {

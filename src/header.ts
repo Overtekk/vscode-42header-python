@@ -22,19 +22,20 @@ export type HeaderInfo = {
 
 /**
  * Template where each field name is prefixed by $ and is padded with _
+ * Header modified to make Flake8 happy.
  */
 const genericTemplate = `
-********************************************************************************
-*                                                                              *
-*                                                         :::      ::::::::    *
-*    $FILENAME__________________________________        :+:      :+:    :+:    *
-*                                                     +:+ +:+         +:+      *
-*    By: $AUTHOR________________________________    +#+  +:+       +#+         *
-*                                                 +#+#+#+#+#+   +#+            *
-*    Created: $CREATEDAT_________ by $CREATEDBY_       #+#    #+#              *
-*    Updated: $UPDATEDAT_________ by $UPDATEDBY_      ###   ########.fr        *
-*                                                                              *
-********************************************************************************
+*****************************************************************************
+*                                                                           *
+*                                                      :::      ::::::::    *
+* $FILENAME__________________________________        :+:      :+:    :+:    *
+*                                                  +:+ +:+         +:+      *
+* By: $AUTHOR________________________________    +#+  +:+       +#+         *
+*                                              +#+#+#+#+#+   +#+            *
+* Created: $CREATEDAT_________ by $CREATEDBY_      #+#    #+#               *
+* Updated: $UPDATEDAT_________ by $UPDATEDBY_      ###   ########.fr        *
+*                                                                           *
+*****************************************************************************
 
 `.substring(1)
 
@@ -79,7 +80,7 @@ export const supportsLanguage = (languageId: string) =>
  * Returns current header text if present at top of document
  */
 export const extractHeader = (text: string): string | null => {
-  const headerRegex = `^(.{80}(\r\n|\n)){10}`
+  const headerRegex = `^(.{77}(\r\n|\n)){11}`
   const match = text.match(headerRegex)
 
   return match ? match[0].split('\r\n').join('\n') : null
