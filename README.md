@@ -16,12 +16,12 @@ Because the old header can't be put due to flake8, I changed it to a mini-header
 # ************************************************************************* #
 #                                                                           #
 #                                                      :::      ::::::::    #
-# vscode.py                                          :+:      :+:    :+:    #
+#  vscode.py                                         :+:      :+:    :+:    #
 #                                                  +:+ +:+         +:+      #
-# By: roandrie <roandrie@student.42.fr>          +#+  +:+       +#+         #
+#  By: roandrie <roandrie@student.42.fr>         +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
-# Created: 2026/01/19 08:57:15 by roandrie         #+#    #+#               #
-# Updated: 2026/01/19 09:18:37 by roandrie         ###   ########.fr        #
+#  Created: 2026/01/19 08:57:15 by roandrie        #+#    #+#               #
+#  Updated: 2026/01/19 09:18:37 by roandrie        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 ```
