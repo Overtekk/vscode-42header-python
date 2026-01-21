@@ -1,8 +1,8 @@
 {
   "name": "42header-python",
   "displayName": "42 Header for Python",
-  "description": "42 header-Python for VSCode : www.42.fr",
-  "version": "1.0.1",
+  "description": "42 Header for Python (flake8 friendly) for VSCode : www.42.fr",
+  "version": "1.1.0",
   "publisher": "Overtek",
   "icon": "42.png",
   "repository": {
@@ -15,7 +15,7 @@
   "homepage": "https://github.com/Overtekk/vscode-42header-python",
   "license": "MIT",
   "engines": {
-    "vscode": "^1.108.0"
+    "vscode": "^1.80.0"
   },
   "categories": [
     "Other"
@@ -34,6 +34,11 @@
         "42headerpython.email": {
           "type": "string",
           "description": "Email address to use in 42 headers-python"
+        },
+		"42headerpython.customAuthor": {
+          "type": "string",
+		  "scope": "resource",
+          "description": "Custom author name for group projects (e.g., 'login1, login2'). Overrides the default 'user <email>' format in the 'By:' field."
         }
       }
     },
@@ -55,14 +60,12 @@
   },
   "scripts": {
     "vscode:prepublish": "tsc -p ./",
-    "compile": "tsc -watch -p ./",
-    "postinstall": "node ./node_modules/vscode/bin/install"
+    "compile": "tsc -watch -p ./"
   },
   "devDependencies": {
     "@types/node": "^25.0.9",
-    "@types/vscode": "^1.108.1",
     "typescript": "^5.9.3",
-    "vscode": "^1.0.0"
+    "@types/vscode": "^1.80.0"
   },
   "dependencies": {
     "moment": "^2.15.0"
