@@ -1,6 +1,8 @@
+<p align="center">
 <img
   src="42.png"
-  width=128>
+  width=230>
+</p>
 
 > **⚠️ FORK NOTICE**
 >
